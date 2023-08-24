@@ -3,7 +3,7 @@ name: PlatformIO CI
 on: [push]
 
 jobs:
-  buildAll:
+  run-all-buils:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,5 +22,5 @@ jobs:
 
       - name: Build PlatformIO Project
         run: pio run
-     - name: Run Tests
+      - name: Run Tests
         run: pio test --environment native
